@@ -4,16 +4,20 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bowlingTable.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bowlingTable.Controller">
    <children>
-      <Button layoutX="41.0" layoutY="14.0" mnemonicParsing="false" text="Load Table" />
-      <Separator layoutX="14.0" layoutY="48.0" prefWidth="600.0" />
-      <Label layoutX="245.0" layoutY="11.0" text="BOWLING">
+      <Button layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadTable" text="Load Table" />
+      <Separator layoutX="10.0" layoutY="50.0" prefWidth="680.0" />
+      <Label layoutX="281.0" layoutY="11.0" text="BOWLING">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
+      <VBox fx:id="vboxTable" layoutX="15.0" layoutY="60.0" prefHeight="200.0" prefWidth="120.0" />
+      <VBox fx:id="vboxTable1" layoutX="135.0" layoutY="60.0" prefHeight="200.0" prefWidth="50.0" />
+      <VBox fx:id="vboxTable2" layoutX="185.0" layoutY="60.0" prefHeight="200.0" prefWidth="500.0" />
    </children>
 </AnchorPane>
